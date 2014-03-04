@@ -4,11 +4,11 @@
  *
  */
 
-self.port.on("show", function onShow () {
+self.port.on("show", function onShow (uriBase) {
     var dispatcher = function (ui) {
         ui.foo();
     };
 
-    var ui = new UI();
+    var ui = new UI(uriBase);
     dispatcher(ui);
 });

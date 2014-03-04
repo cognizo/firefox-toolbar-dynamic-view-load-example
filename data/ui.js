@@ -4,7 +4,7 @@
  *
  */
 
-var UI = function () {
+var UI = function (uriBase) {
     var self = {};
     self.foo = function () {
         load("views/fooView.html", function (html) {
@@ -15,7 +15,8 @@ var UI = function () {
 
     var load = function load (file, callback) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', file, true);
+        console.log('FILE', uriBase + file);
+        xhr.open('GET', uriBase + file, true);
         xhr.onload = function (e) {
             console.log(xhr.response);
             callback(xhr.response);

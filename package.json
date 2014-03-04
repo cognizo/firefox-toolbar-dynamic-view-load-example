@@ -1,0 +1,12 @@
+{
+  "name": "dynamic-view-loading",
+  "title": "Dynamic view loading example",
+  "id": "jid1-GJYAtrBfHY2x6Q",
+  "description": "A golfed example with cross-domain-content permissions and jQuery.load",
+  "author": "CATS Software",
+  "permissions": { 
+    "cross-domain-content": ["http://localhost"]
+  },
+  "license": "???",
+  "version": "0.1"
+}
